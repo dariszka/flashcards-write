@@ -20,7 +20,6 @@ html {
 a:hover {
     cursor: url('pointer.png'), auto;
 }
-
 input:hover {
     cursor: url('typer.png'), auto;
 }
@@ -112,9 +111,9 @@ input:focus {
 }
 
 #body {
-    margin-top: min(150px, 30%);
+    margin-top: min(150px, 5vw);
     margin-bottom: 2.7vw;
-    padding: 30px;
+    padding: 5%;
 
     display: flex;
     flex-direction: column;
@@ -151,6 +150,12 @@ input:focus {
     font-family: 'Blox', 'Pixeldream', serif;
 }
 
+@media screen and (max-width: 1290px){
+    input:focus {
+        width: 220px;
+    }
+}
+
 @media screen and (max-width: 990px){
     .logo {
         font-size: 70px;
@@ -161,14 +166,23 @@ input:focus {
     .search {
         width: 110px;
     }
+    input:focus {
+        width: 200px;
+        padding-left: 50px;
+    }
 }
 
 @media screen and (max-width: 860px){
     .logo {
         font-size: 60px;
+        width: 100px;
     }
     .search {
         width: 70px;
+    }
+    input:focus {
+        width: 330px;
+        padding-left: 50px;
     }
 }
 
@@ -179,6 +193,10 @@ input:focus {
     .search {
         width: 10px;
         padding-left: 34px ;
+    }
+    input:focus {
+        width: 240px;
+        padding-left: 50px;
     }
 }
 
@@ -193,9 +211,16 @@ input:focus {
         width: 30px;
         height: 30px;
         background-size: 30px;
-        padding: 0;
-        background-position: 0px 0px;
+        background-position: 30px 8px;
         background-color: initial;
+    }
+    input:focus {
+        width: 87vw;
+        margin-left: 3.5vw;
+        margin-right: 2vw;
+        padding-left: 50px;
+        background-position: 10px 8px;
+        background-color: rgb(194, 142, 185);
     }
     .title {
         font-size: 65px;
@@ -209,9 +234,19 @@ input:focus {
     .logo {
         font-size: 20px;
     }
-    .search{
+    .search {
         background-size: 20px;
-        background-position: 5px 3px;
+        background-position: 45px 12px;
+        font-size: 20px;
+    }
+    input:focus {
+        height: 25px;
+        width: 87vw;
+        margin-left: 3.5vw;
+        margin-right: 1.9vw;
+        padding-left: 35px;
+        background-position: 8px 8px;
+        background-color: rgb(175, 145, 170);
     }
     .tomate > img {
         width: 20px;
