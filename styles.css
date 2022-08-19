@@ -34,6 +34,7 @@ body {
     justify-content: space-between;
 
     font-family: 'Pixeldream', serif;
+    color: rgb(50, 5, 27);
 }
 
 #header {
@@ -113,24 +114,45 @@ input:focus {
 #body {
     margin-top: min(150px, 5vw);
     margin-bottom: 2.7vw;
-    padding: 5%;
+    padding: 8%;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    gap: 60px;
+    gap: 7vh;
 
     background-color: rgb(234, 174, 209);
 }
 
 .title {
-    font-size: 85px;
+    font-size: 75px;
     letter-spacing: 25px;
+    margin-right: -25px;
 }
 
 .sets {
-    color:black;
+    padding: 0px 7vw 0px 7vw;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    row-gap: 100px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 4px solid rgb(50, 3, 25);
+    box-shadow:  5px 5px 5px rgb(62, 1, 30);
+}
+
+.add-new {
+    background-image: url(plus.svg);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #footer {
